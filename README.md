@@ -23,7 +23,7 @@ Este repositório conta com jogos simples e bastante conhecidos pela sociedade. 
 
 ## Executando os projetos
 
-* Necessário:
+###### É necessário:
 *  Alguma IDE com a capacidade de executar códicos C/C++ **ou**
 *  [GCC](https://gcc.gnu.org), o compilador da linguagem C
 
@@ -35,20 +35,20 @@ mundo unix (debian base):
 * Clone o projeto para a sua máquina
 * Entre na pasta do jogo desejado pelo terminal
 
-1. jogo da **_adivinhação_**:
+1. jogo da _adivinhação_:
 
-* `$ gcc main.c -o game`
-* `$ ./game`
+`$ gcc main.c -o game`
+`$ ./game`
 
-2. jogo da **_forca_**:
+2. jogo da _forca_:
 
-* `$ gcc main.c interface.c -o game`
-* `$ ./game`
+`$ gcc main.c interface.c -o game`
+`$ ./game`
 
-3. jogo do **_pacmano_**:
+3. jogo do _Pacmano_:
 
-* `$ gcc main.c mapa.c ui.c -o game`
-* `$ ./game`
+`$ gcc main.c mapa.c ui.c -o game`
+`$ ./game`
 
 
 * E então é só jogar.
@@ -73,9 +73,8 @@ Habilidades treinadas:
 
 - Variáveis e constantes
 - Entrada e saída de dados
-- Miniartes
 - Como gerar valores *semi*-aleatórios
-- Operações
+- Operações matemáticas e operadores lógicos
 - Estruturas de selecão (if-else-elseif-switch)
 - Estruturas de repetição (for-while)
 
