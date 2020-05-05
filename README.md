@@ -8,7 +8,7 @@ Este repositório conta com jogos simples e bastante conhecidos pela sociedade. 
 #### Jogos:
 * Jogo de advinhação
 * Jogo da Forca
-* Jogo do Pacmano (baseado no clássico jogo de atari [Pacman](https://www.google.com/doodles/30th-anniversary-of-pac-man)
+* Jogo do Pacmano (baseado no clássico jogo de atari [Pacman](https://www.google.com/doodles/30th-anniversary-of-pac-man))
 
 ## Habilidades treinadas em geral com este repositório:
 
