@@ -10,6 +10,17 @@ Este repositório conta com jogos simples e bastante conhecidos pela sociedade. 
 * Jogo da Forca
 * Jogo do Pacmano (baseado no clássico jogo de atari [Pacman](https://www.google.com/doodles/30th-anniversary-of-pac-man)
 
+## Habilidades treinadas em geral com este repositório:
+
+1. Controlador de versionamento Git/GitHub:
+* como clonar projetos
+* comandos do git no terminal bash
+* adicionando, comitando arquivos
+* o que é uma branch?
+* push request, subindo arquivos diretamente no repositório
+2. Linguagem de marcação MarkDown
+3. Linguagem de programação C
+
 ## Executando os projetos
 
 * Necessário:
@@ -39,7 +50,9 @@ mundo unix (debian base):
 
 ## Jogo-da-advinhação
 
-Jogo simples de advinhação, em que a máquina *"pensa"* em um número de 1 até 100, e você tem que chutar um número e tentar acertar, implementado o mecanismo de dificuldade, da qual temos **3 níveis: fácil, médio e difícil**, em que o modo fácil você tem 20 chances de acertar o número (lembrando que o programa vai informar se o número é maior ou menor do que o número digitado pelo usuário), já o modo médio lhe disponibiliza 12 chances, e o modo difícil lhe disponibiliza apenas 6 chances para acertar o número "pensado" pela máquina.
+**_Jogo simples de advinhação, em que a máquina *"pensa"* em um número de 1 até 100, e você tem que chutar um número e tentar acertar, implementado o mecanismo de dificuldade, da qual temos 3 níveis: fácil, médio e difícil_**
+
+Em que o modo fácil você tem 20 chances de acertar o número (lembrando que o programa vai informar se o número é maior ou menor do que o número digitado pelo usuário), já o modo médio lhe disponibiliza 12 chances, e o modo difícil lhe disponibiliza apenas 6 chances para acertar o número "pensado" pela máquina.
 
 Habilidades treinadas:
 
@@ -51,11 +64,13 @@ Habilidades treinadas:
 - [x] Estruturas de selecão (if-else-elseif-switch)
 - [x] Estruturas de repetição (for-while)
 
+[Interface do jogo](https://github.com/gustavo-mendel/jogos-com-c/blob/master/jogo-da-adivinhacao/interface.md)
+
 ## Jogo-da-forca
 
 **_O computador escolherá, de maneira randômica, uma palavra que está salva em um arquivo de palavras, e o jogador deve chutar, letra por letra, até adivinhar a palavra._**
 
-**_Se o jogador chutar 5 letras erradas, ele perde. Ao final, o computador oferecerá a possibilidade do usuário inserir uma nova palavra no banco de dados._**
+_Se o jogador chutar 5 letras erradas, ele perde. Ao final, o computador oferecerá a possibilidade do usuário inserir uma nova palavra no banco de dados._
 
 Com o jogo feito, a ideia é aprender em linguagem C:
 
@@ -66,128 +81,34 @@ Com o jogo feito, a ideia é aprender em linguagem C:
 - [x] Aprender mais boas práticas de código, como a criação e extração de funções para evitar repetição de código.
 - [x] Criar header files.
 
-Como ele ficará?
-Nosso jogo também terá uma interface amigável. Ao iniciar, ele nos dará um boas vindas, e imprimirá a forca, por enquanto, sem ninguém:
+[Interface do jogo](https://github.com/gustavo-mendel/jogos-com-c/blob/master/jogo-da-forca/interface.md)
 
-```
-/****************/
-/ Jogo de Forca */
-/****************/
-
-  _______       
- |/      |      
- |           
- |           
- |             
- |            
- |              
-_|___          
-``` 
-
-
-> _ _ _ _ _ _ _ _ _ 
-
-Qual letra?
-
-#### Se você chutar uma letra errada, ele o avisará e o homenzinho comecará a aparecer na forca:
-
-```
-
-Você errou: a palavra NÃO tem a letra X
-
-  _______       
- |/      |      
- |      (_)  
- |           
- |             
- |            
- |              
-_|___           
-
-```
-
-
-> _ _ _ _ _ _ _ _ _ 
-
-Qual letra?
-
-#### Se você chutar uma letra certa, a letra aparece entre o vazado:
-
-
-Qual letra? A
-
-```
-
-Você acertou: a palavra tem a letra A
-  _______       
- |/      |      
- |           
- |           
- |             
- |            
- |              
-_|___           
-
-```
-
-> _ _ _ _ _ A _ _ A
-
-Qual letra?
-
-#### Se você perder, ele te enforcará por completo:
-
-```
-  _______       
- |/      |      
- |      (_)  
- |      \|/  
- |       |     
- |      / \   
- |              
-_|___
-
-```
-
-#### Uma caveira também aparecerá, avisando que o jogo acabou:
-
-```
-
-Puxa, você foi enforcado!
-
-    _______________         
-   /               \       
-  /                 \      
-//                   \/\  
-\|   XXXX     XXXX   | /   
- |   XXXX     XXXX   |/     
- |   XXX       XXX   |      
- |                   |      
- \__      XXX      __/     
-   |\     XXX     /|       
-   | |           | |        
-   | I I I I I I I |        
-   |  I I I I I I  |        
-   \_             _/       
-     \_         _/         
-       \_______/
-
-```
-
-#### Se você ganhar, um troféu aparecerá:
-
-
-```
-Parabéns, você ganhou!
-       ___________      
-      '._==_==_=_.'     
-      .-\:      /-.    
-     | (|:.     |) |    
-      '-|:.     |-'     
-        \::.    /      
-         '::. .'        
-           ) (          
-         _.' '._        
-        '-------'
-```
 ## Jogo do Pacmano
 
+**_Jogo baseado no Pacman de atari. O programa irá carregar um mapa pré-definido no arquivo `mapa.txt`, em que qualquer um poderá alterar o mapa como quiser, e colocar os inimigos/paredes/bombas onde quiser. Depois de começado o jogo, o usuário poderá usar os comandos w,a,s,d para mover o Pacmano._**
+
+Mapa inicial:
+
+```
+10 20
+____________________
+|...#..|........|.#|
+|.F.|...|...|...|..|
+|____..F.|..|.F#|..|
+|...|.......|___|..|
+|...|...F..........|
+|@....#..|......F..|
+|________|......___|
+|..F....F.......#..|
+|__________________|
+
+```
+
+Legenda:
+```
+10 e 20 são as linhas e colunas
+- e | são as paredes
+@ é o Pacmano
+F são os inimigos
+# são os poderes
+```
