@@ -34,8 +34,23 @@ mundo unix (debian base):
 
 * Clone o projeto para a sua máquina
 * Entre na pasta do jogo desejado pelo terminal
+
+1. jogo da **_advinhação_**:
+
 * `$ gcc main.c -o game`
 * `$ ./game`
+
+2. jogo da **_forca_**:
+
+* `$ gcc main.c interface.c -o game`
+* `$ ./game`
+
+3. jogo do **_pacmano_**:
+
+* `$ gcc main.c mapa.c ui.c -o game`
+* `$ ./game`
+
+
 * E então é só jogar.
 
 ## Contribuindo
@@ -52,17 +67,17 @@ mundo unix (debian base):
 
 **_Jogo simples de advinhação, em que a máquina *"pensa"* em um número de 1 até 100, e você tem que chutar um número e tentar acertar, implementado o mecanismo de dificuldade, da qual temos 3 níveis: fácil, médio e difícil_**
 
-Em que o modo fácil você tem 20 chances de acertar o número (lembrando que o programa vai informar se o número é maior ou menor do que o número digitado pelo usuário), já o modo médio lhe disponibiliza 12 chances, e o modo difícil lhe disponibiliza apenas 6 chances para acertar o número "pensado" pela máquina.
+Em que o modo fácil você tem 20 chances de acertar o número (lembrando que o programa vai informar se o número é maior ou menor do que o número digitado pelo usuário), já o modo médio lhe disponibiliza 12 chances, e o modo difícil lhe disponibiliza apenas 6 chances para acertar o número "pensado" pela máquina. Além de contar com um sistema de contagem de pontos simples, em que quando mais distante seu chute do número correto, mais você perde pontos.
 
 Habilidades treinadas:
 
-- [x] Variáveis e constantes
-- [x] Entrada e saída de dados
-- [x] Miniartes
-- [x] Como gerar valores *semi*-aleatórios
-- [x] Operações
-- [x] Estruturas de selecão (if-else-elseif-switch)
-- [x] Estruturas de repetição (for-while)
+- Variáveis e constantes
+- Entrada e saída de dados
+- Miniartes
+- Como gerar valores *semi*-aleatórios
+- Operações
+- Estruturas de selecão (if-else-elseif-switch)
+- Estruturas de repetição (for-while)
 
 [Interface do jogo](https://github.com/gustavo-mendel/jogos-com-c/blob/master/jogo-da-adivinhacao/interface.md)
 
@@ -74,18 +89,27 @@ _Se o jogador chutar 5 letras erradas, ele perde. Ao final, o computador oferece
 
 Com o jogo feito, a ideia é aprender em linguagem C:
 
-- [x] Criar, varrer e manipular arrays de diferentes tipos.
-- [x] Usar arrays de chars (strings) e funções para manipulá-los.
-- [x] Entender e criar funções que recebem parâmetros e devolvem valores.
-- [x] Ler e escrever arquivos com formatos específicos.
-- [x] Aprender mais boas práticas de código, como a criação e extração de funções para evitar repetição de código.
-- [x] Criar header files.
+- Criar, varrer e manipular arrays de diferentes tipos.
+- Usar arrays de chars (strings) e funções para manipulá-los.
+- Entender e criar funções que recebem parâmetros e devolvem valores.
+- Ler e escrever arquivos com formatos específicos.
+- Aprender mais boas práticas de código, como a criação e extração de funções para evitar repetição de código.
+- Criar header files.
 
 [Interface do jogo](https://github.com/gustavo-mendel/jogos-com-c/blob/master/jogo-da-forca/interface.md)
 
 ## Jogo do Pacmano
 
 **_Jogo baseado no Pacman de atari. O programa irá carregar um mapa pré-definido no arquivo `mapa.txt`, em que qualquer um poderá alterar o mapa como quiser, e colocar os inimigos/paredes/bombas onde quiser. Depois de começado o jogo, o usuário poderá usar os comandos w,a,s,d para mover o Pacmano._**
+
+Habilidades:
+
+-Escreva funções recursivas
+-Manipule matrizes
+-Defina tipos e estruturas
+-Lide com diretivas de compilação
+-Divida o código em múltiplos arquivos
+-Crie um jogo de Pac Man completo
 
 Mapa inicial:
 
@@ -112,3 +136,9 @@ Legenda:
 F são os inimigos
 # são os poderes
 ```
+
+[Interface do jogo](https://github.com/gustavo-mendel/jogos-com-c/edit/master/jogo-do-pacmano/interface.md)
+
+## Créditos
+
+Copyright (C) 2020 by Gustavo Mendel
