@@ -6,7 +6,7 @@ Inicialmente baseado no curso online da plataforma de cursos online [Alura](http
 Este repositório conta com jogos simples e bastante conhecidos pela sociedade. A escolha de tais jogos é devido ao fato de fornecer as habilidades necessárias para a introdução de alguma linguagem de programação. 
 
 #### Jogos:
-* Jogo de advinhação
+* Jogo de adivinhação
 * Jogo da Forca
 * Jogo do Pacmano (baseado no clássico jogo de atari [Pacman](https://www.google.com/doodles/30th-anniversary-of-pac-man))
 
@@ -35,7 +35,7 @@ mundo unix (debian base):
 * Clone o projeto para a sua máquina
 * Entre na pasta do jogo desejado pelo terminal
 
-1. jogo da **_advinhação_**:
+1. jogo da **_adivinhação_**:
 
 * `$ gcc main.c -o game`
 * `$ ./game`
@@ -63,9 +63,9 @@ mundo unix (debian base):
 
 [Artigo](https://blog.da2k.com.br/2015/02/04/git-e-github-do-clone-ao-pull-request/) da da2k sobre como fazer Pull Rrequests.
 
-## Jogo-da-advinhação
+## Jogo-da-adivinhação
 
-**_Jogo simples de advinhação, em que a máquina *"pensa"* em um número de 1 até 100, e você tem que chutar um número e tentar acertar, implementado o mecanismo de dificuldade, da qual temos 3 níveis: fácil, médio e difícil_**
+**_Jogo simples de adivinhação, em que a máquina *"pensa"* em um número de 1 até 100, e você tem que chutar um número e tentar acertar, implementado o mecanismo de dificuldade, da qual temos 3 níveis: fácil, médio e difícil_**
 
 Em que o modo fácil você tem 20 chances de acertar o número (lembrando que o programa vai informar se o número é maior ou menor do que o número digitado pelo usuário), já o modo médio lhe disponibiliza 12 chances, e o modo difícil lhe disponibiliza apenas 6 chances para acertar o número "pensado" pela máquina. Além de contar com um sistema de contagem de pontos simples, em que quando mais distante seu chute do número correto, mais você perde pontos.
 
