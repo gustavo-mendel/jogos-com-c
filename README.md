@@ -78,7 +78,7 @@ Habilidades treinadas:
 - Estruturas de selecão (if-else-elseif-switch)
 - Estruturas de repetição (for-while)
 
-[Interface do jogo](https://github.com/gustavo-mendel/jogos-com-c/blob/master/jogo-da-adivinhacao/interface.md)
+[Interface do jogo](https://github.com/mende1/jogos-com-c/blob/master/jogo-da-adivinhacao/interface.md)
 
 ## Jogo-da-forca
 
@@ -95,7 +95,7 @@ Com o jogo feito, a ideia é aprender em linguagem C:
 - Aprender mais boas práticas de código, como a criação e extração de funções para evitar repetição de código.
 - Criar header files.
 
-[Interface do jogo](https://github.com/gustavo-mendel/jogos-com-c/blob/master/jogo-da-forca/interface.md)
+[Interface do jogo](https://github.com/mende1/jogos-com-c/blob/master/jogo-da-forca/interface.md)
 
 ## Jogo do Pacmano
 
@@ -136,7 +136,7 @@ F são os inimigos
 # são os poderes
 ```
 
-[Interface do jogo](https://github.com/gustavo-mendel/jogos-com-c/edit/master/jogo-do-pacmano/interface.md)
+[Interface do jogo](https://github.com/mende1/jogos-com-c/edit/master/jogo-do-pacmano/interface.md)
 
 ## Créditos
 
